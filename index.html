@@ -12,69 +12,70 @@
 
     <main>
       <div class="keys">
-        <div class="white">
-          <p>B#</p>
-          <p>C</p>
-        </div>
-
-        <div class="black-keys">
-          <div class="black">
-            <p>C#</p>
-            <p>C♭</p>
-          </div>
-
-          <div class="black">
-            <p>D#</p>
-            <p>E♭</p>
-          </div>
-        </div>
-
-        <div class="white">
-          <p>D</p>
-        </div>
-
-        <div class="white">
-          <p>E</p>
-          <p>F♭</p>
-        </div>
-        <div class="black-keys">
-          <div class="black">
-            <p>F#</p>
-            <p>G♭</p>
-          </div>
-        </div>
-
-        <div class="white">
-          <p>E#</p>
-          <p>F</p>
-        </div>
-        <div class="black-keys">
-          <div class="black">
-            <p>G#</p>
-            <p>A♭</p>
-          </div>
-        </div>
-
-        <div class="white">
-          <p>G</p>
-        </div>
-        <div class="black-keys">
-          <div class="black" onclick="clicked()">
-            <p>A#</p>
-            <p>B♭</p>
-          </div>
-        </div>
-
-        <div class="white">
+        <div data-key="65" id="white-key" class="white">
           <p>A</p>
         </div>
 
-        <div class="white">
-          <p>B</p>
-          <p>C♭</p>
+        <div class="black-keys">
+          <div data-key="87" class="black">
+            <p>W</p>
+          </div>
+
+          <div data-key="69" class="black">
+            <p>E</p>
+          </div>
+        </div>
+
+        <div data-key="68" id="white-key" class="white">
+          <p>D</p>
+        </div>
+
+        <div data-key="70" id="white-key" class="white">
+          <p>F</p>
+        </div>
+        <div class="black-keys">
+          <div data-key="84" class="black">
+            <p>T</p>
+          </div>
+        </div>
+
+        <div data-key="71" id="white-key" class="white">
+          <p>G</p>
+        </div>
+        <div class="black-keys">
+          <div data-key="89" class="black">
+            <p>Y</p>
+          </div>
+        </div>
+
+        <div data-key="72" id="white-key" class="white">
+          <p>H</p>
+        </div>
+        <div class="black-keys">
+          <div data-key="85" class="black">
+            <p>U</p>
+          </div>
+        </div>
+
+        <div data-key="74" id="white-key" class="white">
+          <p>J</p>
         </div>
       </div>
     </main>
+
+    <audio data-key="65" src="sound/zag_x.wav"/>
+    <audio data-key="87" src="sound/wind.wav"/>
+    <audio data-key="69" src="sound/typewriter_click.wav"/>
+    <audio data-key="68" src="sound/thunk.wav"/>
+    <audio data-key="70" src="sound/snow_ski.wav"/>
+    <audio data-key="84" src="sound/skids_x.wav"/>
+    <audio data-key="71" src="sound/ominous.wav"/>
+    <!-- <audio data-key="89" src="sound/ocean3.wav"/> -->
+    <audio data-key="89" src="sound/ocean2.wav"/>
+    <audio data-key="72" src="sound/ocean.wav"/>
+    <audio data-key="85" src="sound/exit_cue_y.wav"/>
+    <audio data-key="74" src="sound/drum_roll_rimshot.wav"/>
+
 
     <script type="text/javascript" src="main.js"></script>
   </body>
